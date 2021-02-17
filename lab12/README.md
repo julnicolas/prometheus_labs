@@ -10,6 +10,9 @@ is correct, only default special metrics (such as up) will be exposed ([promethe
 max({job="prometheus", __name__!~"prometheus.*"}) by(__name__)
 ```
 
+Note : metrics are still exposed if you check prometheus' /metrics endpoint. However, dropped metrics from the
+relabeling rules are not scrapped by prometheus. 
+
 ## Run the exporter
 ```sh
 curl -fLO https://github.com/prometheus/node_exporter/releases/download/v1.0.0/node_exporter-1.0.0.linux-amd64.tar.gz
