@@ -12,4 +12,4 @@ Update the conf to your local IP wherever a hard coded IP is present.
 ``` sh
 docker run --name prometheus -d -v $(pwd)/prometheus.yml:/etc/prometheus/prometheus.yml -p 127.0.0.1:9090:9090 prom/prometheus
 ```
-If prometheus was running locally, it would be possible to reload its config sending the `SIGUSR1` signal to the prometheus process.
+If prometheus was running locally, it would be possible to reload its config sending the `SIGHUP` signal to the prometheus process.
