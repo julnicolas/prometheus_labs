@@ -5,7 +5,7 @@ This applies only for the prometheus scrape job.
 
 If the implementation is functional, all metrics exposed by prometheus start by prometheus. The following
 promql command list all metrics exposed by prometheus which don't start by prometheus. If your implementation
-is correct, only default special metrics (such as up) will be exposed :
+is correct, only default special metrics (such as up) will be exposed ([prometheus/graph](http://localhost:9090)):
 ``` promql
 max({job="prometheus", __name__!~"prometheus.*"}) by(__name__)
 ```
