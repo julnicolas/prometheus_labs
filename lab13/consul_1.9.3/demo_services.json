@@ -1,0 +1,20 @@
+{
+    "services": [{
+        "id": "demo1",
+        "name": "demo",
+        "address": "192.168.1.94",
+        "port": 10000
+    },
+    {
+        "id": "demo2",
+        "name": "demo",
+        "address": "192.168.1.94",
+        "port": 10001
+    },
+    {
+        "id": "demo3",
+        "name": "demo",
+        "address": "192.168.1.94",
+        "port": 10002
+    }]
+}

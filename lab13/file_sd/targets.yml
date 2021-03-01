@@ -1,0 +1,9 @@
+- targets:
+    - 192.168.1.94:10000
+    - 192.168.1.94:10001
+  labels:
+    env: production
+- targets:
+    - 192.168.1.94:10002
+  labels:
+    env: dev
